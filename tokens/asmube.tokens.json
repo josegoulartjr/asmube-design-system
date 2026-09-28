@@ -1,0 +1,991 @@
+{
+  "cor": {
+    "branco": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "azul": {
+      "50": {
+        "$type": "color",
+        "$value": "#F4F6FF"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#E7ECFF"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#D3DBF9"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#B7C1EC"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#94A0D9"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#7683C6"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#5A67B1"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#434E9C"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#303787",
+        "$description": "Cor oficial da marca"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#212765"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#181C41"
+      }
+    },
+    "verde": {
+      "50": {
+        "$type": "color",
+        "$value": "#F0FBEB"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#E3F4DA"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#CDE9BF"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#AED898"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#88C067"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#6AA842",
+        "$description": "Cor oficial da marca"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#51882B"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#3C6D16"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#295400"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#1B3C00"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#0F2600"
+      }
+    },
+    "vermelho": {
+      "50": {
+        "$type": "color",
+        "$value": "#FFF4F3"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#FFE7E5"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#FFD2CE"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#FFB2AC"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#FE817B"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#ED5B59"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#D6353B",
+        "$description": "Cor oficial da marca"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#AF1E28"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#8C0317"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#65000D"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#420005"
+      }
+    },
+    "amarelo": {
+      "50": {
+        "$type": "color",
+        "$value": "#FFF5E7"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#FFECCF"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#FFDBA5"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#FAC369"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#E9A40F",
+        "$description": "Cor oficial da marca"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#C38800"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#9D6C00"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#7D5500"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#604100"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#442D00"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#2C1C00"
+      }
+    },
+    "neutro": {
+      "50": {
+        "$type": "color",
+        "$value": "#F8FAFF"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#F1F3FC"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#E3E6EE"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#D2D4DC"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#A2A4AC"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#7E8088"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#61636A"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#474A55"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#30323D"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#1C1F29"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#0D0F18"
+      }
+    }
+  },
+  "semantico": {
+    "fundo": {
+      "padrao": {
+        "$type": "color",
+        "$value": "{cor.branco}"
+      },
+      "suave": {
+        "$type": "color",
+        "$value": "{cor.neutro.50}"
+      },
+      "sutil": {
+        "$type": "color",
+        "$value": "{cor.neutro.100}"
+      },
+      "marca": {
+        "$type": "color",
+        "$value": "{cor.azul.800}"
+      },
+      "marca-profundo": {
+        "$type": "color",
+        "$value": "{cor.azul.950}"
+      },
+      "marca-suave": {
+        "$type": "color",
+        "$value": "{cor.azul.50}"
+      },
+      "destaque": {
+        "$type": "color",
+        "$value": "{cor.verde.500}"
+      },
+      "destaque-suave": {
+        "$type": "color",
+        "$value": "{cor.verde.50}"
+      },
+      "inverso": {
+        "$type": "color",
+        "$value": "{cor.neutro.950}"
+      }
+    },
+    "texto": {
+      "padrao": {
+        "$type": "color",
+        "$value": "{cor.neutro.900}"
+      },
+      "secundario": {
+        "$type": "color",
+        "$value": "{cor.neutro.600}"
+      },
+      "desabilitado": {
+        "$type": "color",
+        "$value": "{cor.neutro.400}"
+      },
+      "marca": {
+        "$type": "color",
+        "$value": "{cor.azul.800}"
+      },
+      "destaque": {
+        "$type": "color",
+        "$value": "{cor.verde.700}"
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{cor.azul.700}"
+      },
+      "link-hover": {
+        "$type": "color",
+        "$value": "{cor.azul.900}"
+      },
+      "sobre-marca": {
+        "$type": "color",
+        "$value": "{cor.branco}"
+      },
+      "sobre-destaque": {
+        "$type": "color",
+        "$value": "{cor.azul.950}"
+      },
+      "inverso": {
+        "$type": "color",
+        "$value": "{cor.branco}"
+      }
+    },
+    "borda": {
+      "padrao": {
+        "$type": "color",
+        "$value": "{cor.neutro.200}"
+      },
+      "forte": {
+        "$type": "color",
+        "$value": "{cor.neutro.300}"
+      },
+      "marca": {
+        "$type": "color",
+        "$value": "{cor.azul.800}"
+      },
+      "destaque": {
+        "$type": "color",
+        "$value": "{cor.verde.500}"
+      },
+      "foco": {
+        "$type": "color",
+        "$value": "{cor.azul.600}"
+      }
+    },
+    "acao": {
+      "primaria": {
+        "$type": "color",
+        "$value": "{cor.azul.800}"
+      },
+      "primaria-hover": {
+        "$type": "color",
+        "$value": "{cor.azul.900}"
+      },
+      "primaria-ativo": {
+        "$type": "color",
+        "$value": "{cor.azul.950}"
+      },
+      "secundaria": {
+        "$type": "color",
+        "$value": "{cor.verde.500}"
+      },
+      "secundaria-hover": {
+        "$type": "color",
+        "$value": "{cor.verde.400}"
+      },
+      "secundaria-ativo": {
+        "$type": "color",
+        "$value": "{cor.verde.300}"
+      },
+      "fantasma-hover": {
+        "$type": "color",
+        "$value": "{cor.azul.50}"
+      },
+      "desabilitada": {
+        "$type": "color",
+        "$value": "{cor.neutro.100}"
+      }
+    },
+    "feedback": {
+      "sucesso-fundo": {
+        "$type": "color",
+        "$value": "{cor.verde.50}"
+      },
+      "sucesso-borda": {
+        "$type": "color",
+        "$value": "{cor.verde.500}"
+      },
+      "sucesso-texto": {
+        "$type": "color",
+        "$value": "{cor.verde.800}"
+      },
+      "erro-fundo": {
+        "$type": "color",
+        "$value": "{cor.vermelho.50}"
+      },
+      "erro-borda": {
+        "$type": "color",
+        "$value": "{cor.vermelho.500}"
+      },
+      "erro-texto": {
+        "$type": "color",
+        "$value": "{cor.vermelho.800}"
+      },
+      "alerta-fundo": {
+        "$type": "color",
+        "$value": "{cor.amarelo.50}"
+      },
+      "alerta-borda": {
+        "$type": "color",
+        "$value": "{cor.amarelo.400}"
+      },
+      "alerta-texto": {
+        "$type": "color",
+        "$value": "{cor.amarelo.800}"
+      },
+      "info-fundo": {
+        "$type": "color",
+        "$value": "{cor.azul.50}"
+      },
+      "info-borda": {
+        "$type": "color",
+        "$value": "{cor.azul.500}"
+      },
+      "info-texto": {
+        "$type": "color",
+        "$value": "{cor.azul.800}"
+      }
+    }
+  },
+  "fonte": {
+    "familia": {
+      "$type": "fontFamily",
+      "$value": [
+        "Montserrat",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "peso": {
+      "regular": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "medio": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": 600
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": 700
+      },
+      "extrabold": {
+        "$type": "fontWeight",
+        "$value": 800
+      }
+    }
+  },
+  "tipografia": {
+    "web": {
+      "display": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "61px",
+          "fontWeight": "{fonte.peso.extrabold}",
+          "lineHeight": 1.115,
+          "letterSpacing": "-0.02em"
+        }
+      },
+      "h1": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "49px",
+          "fontWeight": "{fonte.peso.extrabold}",
+          "lineHeight": 1.143,
+          "letterSpacing": "-0.02em"
+        }
+      },
+      "h2": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "39px",
+          "fontWeight": "{fonte.peso.bold}",
+          "lineHeight": 1.231,
+          "letterSpacing": "-0.015em"
+        }
+      },
+      "h3": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "31px",
+          "fontWeight": "{fonte.peso.bold}",
+          "lineHeight": 1.29,
+          "letterSpacing": "-0.01em"
+        }
+      },
+      "h4": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "25px",
+          "fontWeight": "{fonte.peso.bold}",
+          "lineHeight": 1.28,
+          "letterSpacing": "0em"
+        }
+      },
+      "h5": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "20px",
+          "fontWeight": "{fonte.peso.semibold}",
+          "lineHeight": 1.4,
+          "letterSpacing": "0em"
+        }
+      },
+      "corpo-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "20px",
+          "fontWeight": "{fonte.peso.regular}",
+          "lineHeight": 1.6,
+          "letterSpacing": "0em"
+        }
+      },
+      "corpo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "16px",
+          "fontWeight": "{fonte.peso.regular}",
+          "lineHeight": 1.5,
+          "letterSpacing": "0em"
+        }
+      },
+      "legenda": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "13px",
+          "fontWeight": "{fonte.peso.medio}",
+          "lineHeight": 1.538,
+          "letterSpacing": "0.01em"
+        }
+      },
+      "sobretitulo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "13px",
+          "fontWeight": "{fonte.peso.bold}",
+          "lineHeight": 1.538,
+          "letterSpacing": "0.08em",
+          "textCase": "uppercase"
+        }
+      },
+      "botao": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fonte.familia}",
+          "fontSize": "16px",
+          "fontWeight": "{fonte.peso.semibold}",
+          "lineHeight": 1.5,
+          "letterSpacing": "0.01em"
+        }
+      }
+    },
+    "peca": {
+      "social": {
+        "hero": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "135px",
+            "fontWeight": "{fonte.peso.extrabold}",
+            "lineHeight": 1,
+            "letterSpacing": "-0.03em"
+          }
+        },
+        "titulo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "101px",
+            "fontWeight": "{fonte.peso.extrabold}",
+            "lineHeight": 1.05,
+            "letterSpacing": "-0.02em"
+          }
+        },
+        "subtitulo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "76px",
+            "fontWeight": "{fonte.peso.bold}",
+            "lineHeight": 1.105,
+            "letterSpacing": "-0.01em"
+          }
+        },
+        "destaque": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "57px",
+            "fontWeight": "{fonte.peso.bold}",
+            "lineHeight": 1.193,
+            "letterSpacing": "0em"
+          }
+        },
+        "chamada": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "43px",
+            "fontWeight": "{fonte.peso.semibold}",
+            "lineHeight": 1.302,
+            "letterSpacing": "0em"
+          }
+        },
+        "corpo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "32px",
+            "fontWeight": "{fonte.peso.regular}",
+            "lineHeight": 1.406,
+            "letterSpacing": "0em"
+          }
+        },
+        "legenda": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "24px",
+            "fontWeight": "{fonte.peso.medio}",
+            "lineHeight": 1.417,
+            "letterSpacing": "0.01em"
+          }
+        },
+        "selo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "24px",
+            "fontWeight": "{fonte.peso.bold}",
+            "lineHeight": 1.208,
+            "letterSpacing": "0.08em",
+            "textCase": "uppercase"
+          }
+        }
+      },
+      "slide": {
+        "hero": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "152px",
+            "fontWeight": "{fonte.peso.extrabold}",
+            "lineHeight": 1,
+            "letterSpacing": "-0.03em"
+          }
+        },
+        "titulo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "114px",
+            "fontWeight": "{fonte.peso.extrabold}",
+            "lineHeight": 1.053,
+            "letterSpacing": "-0.02em"
+          }
+        },
+        "subtitulo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "85px",
+            "fontWeight": "{fonte.peso.bold}",
+            "lineHeight": 1.106,
+            "letterSpacing": "-0.01em"
+          }
+        },
+        "destaque": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "64px",
+            "fontWeight": "{fonte.peso.bold}",
+            "lineHeight": 1.203,
+            "letterSpacing": "0em"
+          }
+        },
+        "chamada": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "48px",
+            "fontWeight": "{fonte.peso.semibold}",
+            "lineHeight": 1.292,
+            "letterSpacing": "0em"
+          }
+        },
+        "corpo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "36px",
+            "fontWeight": "{fonte.peso.regular}",
+            "lineHeight": 1.389,
+            "letterSpacing": "0em"
+          }
+        },
+        "legenda": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "27px",
+            "fontWeight": "{fonte.peso.medio}",
+            "lineHeight": 1.407,
+            "letterSpacing": "0.01em"
+          }
+        },
+        "selo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "27px",
+            "fontWeight": "{fonte.peso.bold}",
+            "lineHeight": 1.185,
+            "letterSpacing": "0.08em",
+            "textCase": "uppercase"
+          }
+        }
+      },
+      "impresso": {
+        "hero": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "46pt",
+            "fontWeight": "{fonte.peso.extrabold}",
+            "lineHeight": 1,
+            "letterSpacing": "-0.03em"
+          }
+        },
+        "titulo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "35pt",
+            "fontWeight": "{fonte.peso.extrabold}",
+            "lineHeight": 1.057,
+            "letterSpacing": "-0.02em"
+          }
+        },
+        "subtitulo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "26pt",
+            "fontWeight": "{fonte.peso.bold}",
+            "lineHeight": 1.115,
+            "letterSpacing": "-0.01em"
+          }
+        },
+        "destaque": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "20pt",
+            "fontWeight": "{fonte.peso.bold}",
+            "lineHeight": 1.2,
+            "letterSpacing": "0em"
+          }
+        },
+        "chamada": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "15pt",
+            "fontWeight": "{fonte.peso.semibold}",
+            "lineHeight": 1.333,
+            "letterSpacing": "0em"
+          }
+        },
+        "corpo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "11pt",
+            "fontWeight": "{fonte.peso.regular}",
+            "lineHeight": 1.364,
+            "letterSpacing": "0em"
+          }
+        },
+        "legenda": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "8pt",
+            "fontWeight": "{fonte.peso.medio}",
+            "lineHeight": 1.375,
+            "letterSpacing": "0.01em"
+          }
+        },
+        "selo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fonte.familia}",
+            "fontSize": "8pt",
+            "fontWeight": "{fonte.peso.bold}",
+            "lineHeight": 1.25,
+            "letterSpacing": "0.08em",
+            "textCase": "uppercase"
+          }
+        }
+      }
+    }
+  },
+  "espaco": {
+    "0": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "1": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "12px"
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": "20px"
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "24px"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "32px"
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": "40px"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "48px"
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "64px"
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "80px"
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "96px"
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": "128px"
+    },
+    "0-5": {
+      "$type": "dimension",
+      "$value": "2px"
+    }
+  },
+  "raio": {
+    "nenhum": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "12px"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "24px"
+    },
+    "pilula": {
+      "$type": "dimension",
+      "$value": "999px"
+    }
+  },
+  "borda": {
+    "fina": {
+      "$type": "dimension",
+      "$value": "1px"
+    },
+    "media": {
+      "$type": "dimension",
+      "$value": "2px"
+    },
+    "grossa": {
+      "$type": "dimension",
+      "$value": "4px"
+    }
+  },
+  "sombra": {
+    "sm": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "#181C4114",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "2px",
+          "spread": "0px"
+        }
+      ]
+    },
+    "md": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "#181C411F",
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "12px",
+          "spread": "-2px"
+        }
+      ]
+    },
+    "lg": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "#181C412E",
+          "offsetX": "0px",
+          "offsetY": "12px",
+          "blur": "32px",
+          "spread": "-8px"
+        }
+      ]
+    }
+  },
+  "breakpoint": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "640px"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "768px"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "1024px"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "1280px"
+    }
+  }
+}

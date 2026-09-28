@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASMUBE Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <img class="cabecalho__logo" src="../assets/logo/asmube-logo-colorido.svg" alt="ASMUBE">
+      <nav class="cabecalho__nav" aria-label="Seções">
+        <a href="#marca">Marca</a>
+        <a href="#cores">Cores</a>
+        <a href="#tipografia">Tipografia</a>
+        <a href="#espacos">Espaços</a>
+        <a href="#componentes">Componentes</a>
+        <a href="#pecas">Peças</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao secao--marca">
+      <div class="container pilha" style="--pilha-espaco: var(--espaco-6)">
+        <span class="selo selo--destaque">Design System v1.0</span>
+        <h1 class="texto-display">ASMUBE</h1>
+        <p class="texto-corpo-lg" style="max-width: 640px; color: var(--cor-azul-100)">
+          Tokens, tipografia e componentes para site, e-mail, redes sociais, apresentações e impressos.
+          Uma fonte única: <code>scripts/tokens.config.mjs</code>.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao" id="marca">
+      <div class="container pilha" style="--pilha-espaco: var(--espaco-8)">
+        <div class="pilha"><span class="sobretitulo">Marca</span><h2>Logo</h2></div>
+        <div class="doc-grade doc-grade--3">
+          <figure class="doc-logo"><div class="doc-logo__area"><img src="../assets/logo/asmube-logo-colorido.svg" alt="Logo colorido"></div><figcaption><strong>Colorido</strong> — fundos brancos e claros</figcaption></figure>
+          <figure class="doc-logo"><div class="doc-logo__area" style="background: var(--cor-fundo-marca)"><img src="../assets/logo/asmube-logo-sobre-azul.svg" alt="Logo sobre azul"></div><figcaption><strong>Sobre azul</strong> — fundos azuis e escuros</figcaption></figure>
+          <figure class="doc-logo"><div class="doc-logo__area" style="background: var(--cor-fundo-destaque)"><img src="../assets/logo/asmube-logo-branco.svg" alt="Logo branco"></div><figcaption><strong>Branco</strong> — fotos, verde e aplicações monocromáticas</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--suave" id="cores">
+      <div class="container pilha" style="--pilha-espaco: var(--espaco-8)">
+        <div class="pilha"><span class="sobretitulo">Cores</span><h2>Paleta</h2>
+          <p class="card__texto" style="max-width: 720px">As escalas são geradas em OKLCH a partir das duas cores oficiais (marcadas com ●). Todas mantêm o mesmo matiz da cor base; só mudam luminosidade e saturação.</p>
+        </div>
+        <div id="paletas" class="pilha" style="--pilha-espaco: var(--espaco-6)"></div>
+        <div class="pilha"><h3>Cores de uso (semânticas)</h3>
+          <p class="card__texto">Use sempre estas nos layouts, não as escalas diretamente. Se a marca mudar, só o mapeamento muda.</p>
+        </div>
+        <div id="semanticas" class="doc-grade doc-grade--3"></div>
+        <div class="pilha"><h3>Contraste</h3></div>
+        <div class="doc-tabela-wrap"><table class="doc-tabela" id="contraste"></table></div>
+        <div class="alerta alerta--alerta"><div><p class="alerta__titulo">Regra de ouro do verde</p><p>Nunca use texto branco sobre o verde #6AA842 (2,88:1). Sobre o verde, o texto é sempre azul profundo (<code>texto.sobre-destaque</code>). Verde sobre azul só em títulos grandes, ícones e grafismos.</p></div></div>
+      </div>
+    </section>
+
+    <section class="secao" id="tipografia">
+      <div class="container pilha" style="--pilha-espaco: var(--espaco-8)">
+        <div class="pilha"><span class="sobretitulo">Tipografia</span><h2>Montserrat em duas escalas</h2>
+          <p class="card__texto" style="max-width: 720px"><strong>Web</strong> (site, landing pages, e-mail): base 16px, razão 1,25 (Terça Maior), entrelinha na grade de 4px. <strong>Peças</strong> (posts, slides, impressos): razão 1,333 (Quarta Justa), com base diferente por formato.</p>
+        </div>
+        <h3>Escala web</h3>
+        <div id="escala-web" class="doc-escala"></div>
+        <div class="doc-linha">
+          <h3>Escala de peças</h3>
+          <div class="doc-abas" role="tablist" id="abas-formato"></div>
+        </div>
+        <div id="escala-peca" class="doc-escala"></div>
+      </div>
+    </section>
+
+    <section class="secao secao--suave" id="espacos">
+      <div class="container pilha" style="--pilha-espaco: var(--espaco-8)">
+        <div class="pilha"><span class="sobretitulo">Espaços</span><h2>Espaçamento, raios e sombras</h2>
+          <p class="card__texto">Grade de 4px. O nome é o multiplicador: <code>espaco-4</code> = 16px.</p></div>
+        <div id="espacamentos" class="doc-espacos"></div>
+        <div id="raios" class="doc-grade doc-grade--4"></div>
+        <div id="sombras" class="doc-grade doc-grade--3"></div>
+      </div>
+    </section>
+
+    <section class="secao" id="componentes">
+      <div class="container pilha" style="--pilha-espaco: var(--espaco-10)">
+        <div class="pilha"><span class="sobretitulo">Componentes</span><h2>Biblioteca</h2></div>
+
+        <div class="pilha"><h3>Botões</h3>
+          <div class="doc-fila">
+            <a class="botao" href="#">Associe-se</a>
+            <a class="botao botao--secundario" href="#">Saiba mais</a>
+            <a class="botao botao--contorno" href="#">Contorno</a>
+            <a class="botao botao--fantasma" href="#">Fantasma</a>
+            <button class="botao" disabled>Desabilitado</button>
+          </div>
+          <div class="doc-fila">
+            <a class="botao botao--pequeno" href="#">Pequeno</a>
+            <a class="botao" href="#">Médio</a>
+            <a class="botao botao--grande" href="#">Grande</a>
+          </div>
+          <div class="doc-fila doc-fila--marca">
+            <a class="botao botao--claro" href="#">Claro sobre azul</a>
+            <a class="botao botao--secundario" href="#">Verde sobre azul</a>
+          </div>
+        </div>
+
+        <div class="pilha"><h3>Selos e sobretítulo</h3>
+          <div class="doc-fila">
+            <span class="selo">Evento</span><span class="selo selo--destaque">Novo</span><span class="selo selo--marca">Associados</span>
+            <span class="selo selo--sucesso">Confirmado</span><span class="selo selo--alerta">Últimas vagas</span><span class="selo selo--erro">Encerrado</span>
+            <span class="sobretitulo">Sobretítulo de seção</span>
+          </div>
+        </div>
+
+        <div class="pilha"><h3>Cards</h3>
+          <div class="doc-grade doc-grade--3">
+            <article class="card card--interativo"><span class="selo">Notícia</span><h4 class="card__titulo">Título do card com até duas linhas</h4><p class="card__texto">Texto de apoio curto que resume o conteúdo e convida para a leitura.</p><a href="#">Ler mais →</a></article>
+            <article class="card card--destaque"><h4 class="card__titulo">Card com destaque</h4><p class="card__texto">A borda verde no topo chama atenção sem pesar o layout.</p></article>
+            <article class="card card--marca"><h4 class="card__titulo">Card da marca</h4><p class="card__texto">Para chamadas principais e CTAs.</p><a class="botao botao--secundario botao--pequeno" href="#" style="align-self: flex-start">Participar</a></article>
+          </div>
+        </div>
+
+        <div class="pilha"><h3>Números e citação <span class="doc-sem__ref">(valores ilustrativos)</span></h3>
+          <div class="doc-grade doc-grade--3">
+            <div class="numero"><span class="numero__valor">+1.200</span><span class="numero__rotulo">associados</span></div>
+            <div class="numero"><span class="numero__valor">35</span><span class="numero__rotulo">anos de história</span></div>
+            <blockquote class="citacao"><p class="citacao__texto">“Uma citação curta, forte e memorável.”</p><p class="citacao__autor">Nome da pessoa, cargo</p></blockquote>
+          </div>
+        </div>
+
+        <div class="pilha"><h3>Alertas</h3>
+          <div class="doc-grade doc-grade--2">
+            <div class="alerta"><div><p class="alerta__titulo">Informação</p><p>Mensagem informativa.</p></div></div>
+            <div class="alerta alerta--sucesso"><div><p class="alerta__titulo">Sucesso</p><p>Inscrição confirmada.</p></div></div>
+            <div class="alerta alerta--alerta"><div><p class="alerta__titulo">Atenção</p><p>Prazo termina amanhã.</p></div></div>
+            <div class="alerta alerta--erro"><div><p class="alerta__titulo">Erro</p><p>Não foi possível enviar.</p></div></div>
+          </div>
+        </div>
+
+        <div class="pilha"><h3>Formulário</h3>
+          <form class="doc-form" onsubmit="return false">
+            <div class="campo"><label class="campo__rotulo" for="f-nome">Nome completo</label><input class="entrada" id="f-nome" placeholder="Seu nome"><span class="campo__ajuda">Como aparece no documento.</span></div>
+            <div class="campo"><label class="campo__rotulo" for="f-email">E-mail</label><input class="entrada" id="f-email" type="email" value="email@invalido" aria-invalid="true" aria-describedby="f-email-erro"><span class="campo__erro" id="f-email-erro">Informe um e-mail válido.</span></div>
+            <div class="campo"><label class="campo__rotulo" for="f-assunto">Assunto</label><select class="entrada" id="f-assunto"><option>Associação</option><option>Eventos</option></select></div>
+            <div class="campo"><label class="campo__rotulo" for="f-msg">Mensagem</label><textarea class="entrada" id="f-msg"></textarea></div>
+            <label class="opcao"><input type="checkbox" checked> Quero receber novidades</label>
+            <button class="botao botao--bloco">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--suave" id="pecas">
+      <div class="container pilha" style="--pilha-espaco: var(--espaco-8)">
+        <div class="pilha"><span class="sobretitulo">Peças</span><h2>Posts, stories e slides</h2>
+          <p class="card__texto">Prévia reduzida. As peças usam a escala display no formato <code>social</code>. Os modelos editáveis ficam no Figma. Textos e números são ilustrativos.</p></div>
+        <div class="doc-pecas">
+          <div class="doc-peca" style="--escala: 0.3"><div class="peca peca--post-retrato" data-formato="social">
+            <span class="selo selo--destaque" style="align-self: flex-start; font-size: var(--peca-selo-tamanho); padding: 12px 24px">Evento</span>
+            <h2 class="peca-titulo" style="color: var(--cor-branco); margin-top: 64px">Assembleia Geral 2026</h2>
+            <p class="peca-chamada" style="margin-top: 32px; color: var(--cor-azul-100)">15 de outubro · 19h<br>Sede da ASMUBE</p>
+            <img src="../assets/logo/asmube-logo-sobre-azul.svg" alt="" style="margin-top: auto; width: 320px">
+          </div></div>
+          <div class="doc-peca" style="--escala: 0.3"><div class="peca peca--post-retrato peca--clara" data-formato="social">
+            <span class="peca-selo" style="color: var(--cor-texto-destaque)">Você sabia?</span>
+            <p class="peca-hero" style="margin-top: 48px">+1.200</p>
+            <p class="peca-destaque" style="color: var(--cor-texto-padrao)">associados fortalecendo a nossa categoria</p>
+            <img src="../assets/logo/asmube-logo-colorido.svg" alt="" style="margin-top: auto; width: 320px">
+          </div></div>
+          <div class="doc-peca" style="--escala: 0.3"><div class="peca peca--post-retrato peca--verde" data-formato="social">
+            <span class="peca-selo">Comunicado</span>
+            <h2 class="peca-titulo" style="color: var(--cor-azul-950); margin-top: 64px">Novo horário de atendimento</h2>
+            <p class="peca-corpo" style="margin-top: 32px">Segunda a sexta, das 8h às 17h.</p>
+            <img src="../assets/logo/asmube-logo-branco.svg" alt="" style="margin-top: auto; width: 320px">
+          </div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__grade">
+        <div class="pilha"><img class="rodape__logo" src="../assets/logo/asmube-logo-branco.svg" alt="ASMUBE"><p>Design System v1.0</p></div>
+        <div><p class="rodape__titulo">Arquivos</p><p><a href="../css/tokens.css">tokens.css</a><br><a href="../tokens/asmube.tokens.json">asmube.tokens.json</a></p></div>
+        <div><p class="rodape__titulo">Relatórios</p><p><a href="contraste.md">Contraste WCAG</a></p></div>
+      </div>
+      <div class="rodape__base">Gerado a partir de scripts/tokens.config.mjs</div>
+    </div>
+  </footer>
+
+  <script src="tokens.js"></script>
+  <script src="docs.js"></script>
+</body>
+</html>

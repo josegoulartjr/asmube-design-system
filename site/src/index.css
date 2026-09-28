@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/montserrat";
+/* Tokens gerados por `npm run build` a partir de scripts/tokens.config.mjs (não edite à mão). */
+@import "./asmube-tokens.css";
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: 'Montserrat Variable', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  /* Marca ASMUBE como utilitários Tailwind: bg-marca, text-destaque, bg-marinho… */
+  --color-marca: var(--cor-azul-800);
+  --color-marinho: var(--cor-azul-950);
+  --color-destaque: var(--cor-verde-500);
+  --color-destaque-texto: var(--cor-verde-700);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* shadcn → ASMUBE. Nunca texto branco sobre o verde: o secundário usa azul-marinho. */
+:root {
+  --background: var(--cor-fundo-padrao);
+  --foreground: var(--cor-texto-padrao);
+  --card: var(--cor-fundo-padrao);
+  --card-foreground: var(--cor-texto-padrao);
+  --popover: var(--cor-fundo-padrao);
+  --popover-foreground: var(--cor-texto-padrao);
+  --primary: var(--cor-acao-primaria);
+  --primary-foreground: var(--cor-texto-sobre-marca);
+  --secondary: var(--cor-acao-secundaria);
+  --secondary-foreground: var(--cor-texto-sobre-destaque);
+  --muted: var(--cor-fundo-sutil);
+  --muted-foreground: var(--cor-texto-secundario);
+  --accent: var(--cor-fundo-marca-suave);
+  --accent-foreground: var(--cor-texto-marca);
+  --destructive: var(--cor-vermelho-600);
+  --border: var(--cor-borda-padrao);
+  --input: var(--cor-borda-forte);
+  --ring: var(--cor-borda-foco);
+  --chart-1: var(--cor-azul-800);
+  --chart-2: var(--cor-verde-500);
+  --chart-3: var(--cor-azul-500);
+  --chart-4: var(--cor-verde-300);
+  --chart-5: var(--cor-azul-300);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

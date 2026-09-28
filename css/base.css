@@ -1,0 +1,115 @@
+/* ASMUBE — base: reset leve, tipografia padrão e layout.
+   Carregue a fonte no <head>:
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"> */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-corpo-tamanho);
+  line-height: var(--texto-corpo-altura);
+  font-weight: var(--texto-corpo-peso);
+  color: var(--cor-texto-padrao);
+  background: var(--cor-fundo-padrao);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, blockquote {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--cor-texto-marca);
+  text-wrap: balance;
+}
+
+h1 { font: var(--texto-h1-peso) var(--texto-h1-tamanho) / var(--texto-h1-altura) var(--fonte-familia); letter-spacing: var(--texto-h1-espacamento); }
+h2 { font: var(--texto-h2-peso) var(--texto-h2-tamanho) / var(--texto-h2-altura) var(--fonte-familia); letter-spacing: var(--texto-h2-espacamento); }
+h3 { font: var(--texto-h3-peso) var(--texto-h3-tamanho) / var(--texto-h3-altura) var(--fonte-familia); letter-spacing: var(--texto-h3-espacamento); }
+h4 { font: var(--texto-h4-peso) var(--texto-h4-tamanho) / var(--texto-h4-altura) var(--fonte-familia); }
+h5 { font: var(--texto-h5-peso) var(--texto-h5-tamanho) / var(--texto-h5-altura) var(--fonte-familia); }
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--cor-texto-link);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--cor-texto-link-hover);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: var(--borda-media) solid var(--cor-borda-foco);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--espaco-4);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: var(--espaco-8);
+  }
+}
+
+.secao {
+  padding-block: var(--espaco-16);
+}
+
+@media (min-width: 1024px) {
+  .secao {
+    padding-block: var(--espaco-24);
+  }
+}
+
+.secao--suave { background: var(--cor-fundo-suave); }
+.secao--marca { background: var(--cor-fundo-marca); color: var(--cor-texto-sobre-marca); }
+.secao--marca :is(h1, h2, h3, h4, h5) { color: var(--cor-texto-sobre-marca); }
+
+.pilha > * + * {
+  margin-top: var(--pilha-espaco, var(--espaco-4));
+}
+
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

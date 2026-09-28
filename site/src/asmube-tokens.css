@@ -1,0 +1,484 @@
+/* ASMUBE Design System — gerado por `npm run build`. Não edite à mão:
+   altere scripts/tokens.config.mjs e rode o build de novo. */
+
+
+:root {
+  --cor-branco: #FFFFFF;
+  --cor-azul-50: #F4F6FF;
+  --cor-azul-100: #E7ECFF;
+  --cor-azul-200: #D3DBF9;
+  --cor-azul-300: #B7C1EC;
+  --cor-azul-400: #94A0D9;
+  --cor-azul-500: #7683C6;
+  --cor-azul-600: #5A67B1;
+  --cor-azul-700: #434E9C;
+  --cor-azul-800: #303787;
+  --cor-azul-900: #212765;
+  --cor-azul-950: #181C41;
+  --cor-verde-50: #F0FBEB;
+  --cor-verde-100: #E3F4DA;
+  --cor-verde-200: #CDE9BF;
+  --cor-verde-300: #AED898;
+  --cor-verde-400: #88C067;
+  --cor-verde-500: #6AA842;
+  --cor-verde-600: #51882B;
+  --cor-verde-700: #3C6D16;
+  --cor-verde-800: #295400;
+  --cor-verde-900: #1B3C00;
+  --cor-verde-950: #0F2600;
+  --cor-vermelho-50: #FFF4F3;
+  --cor-vermelho-100: #FFE7E5;
+  --cor-vermelho-200: #FFD2CE;
+  --cor-vermelho-300: #FFB2AC;
+  --cor-vermelho-400: #FE817B;
+  --cor-vermelho-500: #ED5B59;
+  --cor-vermelho-600: #D6353B;
+  --cor-vermelho-700: #AF1E28;
+  --cor-vermelho-800: #8C0317;
+  --cor-vermelho-900: #65000D;
+  --cor-vermelho-950: #420005;
+  --cor-amarelo-50: #FFF5E7;
+  --cor-amarelo-100: #FFECCF;
+  --cor-amarelo-200: #FFDBA5;
+  --cor-amarelo-300: #FAC369;
+  --cor-amarelo-400: #E9A40F;
+  --cor-amarelo-500: #C38800;
+  --cor-amarelo-600: #9D6C00;
+  --cor-amarelo-700: #7D5500;
+  --cor-amarelo-800: #604100;
+  --cor-amarelo-900: #442D00;
+  --cor-amarelo-950: #2C1C00;
+  --cor-neutro-50: #F8FAFF;
+  --cor-neutro-100: #F1F3FC;
+  --cor-neutro-200: #E3E6EE;
+  --cor-neutro-300: #D2D4DC;
+  --cor-neutro-400: #A2A4AC;
+  --cor-neutro-500: #7E8088;
+  --cor-neutro-600: #61636A;
+  --cor-neutro-700: #474A55;
+  --cor-neutro-800: #30323D;
+  --cor-neutro-900: #1C1F29;
+  --cor-neutro-950: #0D0F18;
+
+  --cor-fundo-padrao: var(--cor-branco);
+  --cor-fundo-suave: var(--cor-neutro-50);
+  --cor-fundo-sutil: var(--cor-neutro-100);
+  --cor-fundo-marca: var(--cor-azul-800);
+  --cor-fundo-marca-profundo: var(--cor-azul-950);
+  --cor-fundo-marca-suave: var(--cor-azul-50);
+  --cor-fundo-destaque: var(--cor-verde-500);
+  --cor-fundo-destaque-suave: var(--cor-verde-50);
+  --cor-fundo-inverso: var(--cor-neutro-950);
+  --cor-texto-padrao: var(--cor-neutro-900);
+  --cor-texto-secundario: var(--cor-neutro-600);
+  --cor-texto-desabilitado: var(--cor-neutro-400);
+  --cor-texto-marca: var(--cor-azul-800);
+  --cor-texto-destaque: var(--cor-verde-700);
+  --cor-texto-link: var(--cor-azul-700);
+  --cor-texto-link-hover: var(--cor-azul-900);
+  --cor-texto-sobre-marca: var(--cor-branco);
+  --cor-texto-sobre-destaque: var(--cor-azul-950);
+  --cor-texto-inverso: var(--cor-branco);
+  --cor-borda-padrao: var(--cor-neutro-200);
+  --cor-borda-forte: var(--cor-neutro-300);
+  --cor-borda-marca: var(--cor-azul-800);
+  --cor-borda-destaque: var(--cor-verde-500);
+  --cor-borda-foco: var(--cor-azul-600);
+  --cor-acao-primaria: var(--cor-azul-800);
+  --cor-acao-primaria-hover: var(--cor-azul-900);
+  --cor-acao-primaria-ativo: var(--cor-azul-950);
+  --cor-acao-secundaria: var(--cor-verde-500);
+  --cor-acao-secundaria-hover: var(--cor-verde-400);
+  --cor-acao-secundaria-ativo: var(--cor-verde-300);
+  --cor-acao-fantasma-hover: var(--cor-azul-50);
+  --cor-acao-desabilitada: var(--cor-neutro-100);
+  --cor-feedback-sucesso-fundo: var(--cor-verde-50);
+  --cor-feedback-sucesso-borda: var(--cor-verde-500);
+  --cor-feedback-sucesso-texto: var(--cor-verde-800);
+  --cor-feedback-erro-fundo: var(--cor-vermelho-50);
+  --cor-feedback-erro-borda: var(--cor-vermelho-500);
+  --cor-feedback-erro-texto: var(--cor-vermelho-800);
+  --cor-feedback-alerta-fundo: var(--cor-amarelo-50);
+  --cor-feedback-alerta-borda: var(--cor-amarelo-400);
+  --cor-feedback-alerta-texto: var(--cor-amarelo-800);
+  --cor-feedback-info-fundo: var(--cor-azul-50);
+  --cor-feedback-info-borda: var(--cor-azul-500);
+  --cor-feedback-info-texto: var(--cor-azul-800);
+
+  --fonte-familia: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  --fonte-peso-regular: 400;
+  --fonte-peso-medio: 500;
+  --fonte-peso-semibold: 600;
+  --fonte-peso-bold: 700;
+  --fonte-peso-extrabold: 800;
+
+  --texto-display-tamanho: 61px;
+  --texto-display-altura: 68px;
+  --texto-display-peso: var(--fonte-peso-extrabold);
+  --texto-display-espacamento: -0.02em;
+  --texto-h1-tamanho: 49px;
+  --texto-h1-altura: 56px;
+  --texto-h1-peso: var(--fonte-peso-extrabold);
+  --texto-h1-espacamento: -0.02em;
+  --texto-h2-tamanho: 39px;
+  --texto-h2-altura: 48px;
+  --texto-h2-peso: var(--fonte-peso-bold);
+  --texto-h2-espacamento: -0.015em;
+  --texto-h3-tamanho: 31px;
+  --texto-h3-altura: 40px;
+  --texto-h3-peso: var(--fonte-peso-bold);
+  --texto-h3-espacamento: -0.01em;
+  --texto-h4-tamanho: 25px;
+  --texto-h4-altura: 32px;
+  --texto-h4-peso: var(--fonte-peso-bold);
+  --texto-h4-espacamento: 0em;
+  --texto-h5-tamanho: 20px;
+  --texto-h5-altura: 28px;
+  --texto-h5-peso: var(--fonte-peso-semibold);
+  --texto-h5-espacamento: 0em;
+  --texto-corpo-lg-tamanho: 20px;
+  --texto-corpo-lg-altura: 32px;
+  --texto-corpo-lg-peso: var(--fonte-peso-regular);
+  --texto-corpo-lg-espacamento: 0em;
+  --texto-corpo-tamanho: 16px;
+  --texto-corpo-altura: 24px;
+  --texto-corpo-peso: var(--fonte-peso-regular);
+  --texto-corpo-espacamento: 0em;
+  --texto-legenda-tamanho: 13px;
+  --texto-legenda-altura: 20px;
+  --texto-legenda-peso: var(--fonte-peso-medio);
+  --texto-legenda-espacamento: 0.01em;
+  --texto-sobretitulo-tamanho: 13px;
+  --texto-sobretitulo-altura: 20px;
+  --texto-sobretitulo-peso: var(--fonte-peso-bold);
+  --texto-sobretitulo-espacamento: 0.08em;
+  --texto-botao-tamanho: 16px;
+  --texto-botao-altura: 24px;
+  --texto-botao-peso: var(--fonte-peso-semibold);
+  --texto-botao-espacamento: 0.01em;
+
+  --espaco-0: 0px;
+  --espaco-1: 4px;
+  --espaco-2: 8px;
+  --espaco-3: 12px;
+  --espaco-4: 16px;
+  --espaco-5: 20px;
+  --espaco-6: 24px;
+  --espaco-8: 32px;
+  --espaco-10: 40px;
+  --espaco-12: 48px;
+  --espaco-16: 64px;
+  --espaco-20: 80px;
+  --espaco-24: 96px;
+  --espaco-32: 128px;
+  --espaco-0-5: 2px;
+
+  --raio-nenhum: 0px;
+  --raio-sm: 4px;
+  --raio-md: 8px;
+  --raio-lg: 12px;
+  --raio-xl: 16px;
+  --raio-2xl: 24px;
+  --raio-pilula: 999px;
+  --borda-fina: 1px;
+  --borda-media: 2px;
+  --borda-grossa: 4px;
+  --sombra-sm: 0px 1px 2px 0px rgb(24 28 65 / 0.08);
+  --sombra-md: 0px 4px 12px -2px rgb(24 28 65 / 0.12);
+  --sombra-lg: 0px 12px 32px -8px rgb(24 28 65 / 0.18);
+  --container-max: 1200px;
+}
+
+/* Escala display das peças: o formato padrão é "social". Use data-formato="slide" ou "impresso" no container da peça. */
+
+:root,
+[data-formato="social"] {
+  --peca-hero-tamanho: 135px;
+  --peca-hero-altura: 135px;
+  --peca-hero-peso: var(--fonte-peso-extrabold);
+  --peca-hero-espacamento: -0.03em;
+  --peca-titulo-tamanho: 101px;
+  --peca-titulo-altura: 106px;
+  --peca-titulo-peso: var(--fonte-peso-extrabold);
+  --peca-titulo-espacamento: -0.02em;
+  --peca-subtitulo-tamanho: 76px;
+  --peca-subtitulo-altura: 84px;
+  --peca-subtitulo-peso: var(--fonte-peso-bold);
+  --peca-subtitulo-espacamento: -0.01em;
+  --peca-destaque-tamanho: 57px;
+  --peca-destaque-altura: 68px;
+  --peca-destaque-peso: var(--fonte-peso-bold);
+  --peca-destaque-espacamento: 0em;
+  --peca-chamada-tamanho: 43px;
+  --peca-chamada-altura: 56px;
+  --peca-chamada-peso: var(--fonte-peso-semibold);
+  --peca-chamada-espacamento: 0em;
+  --peca-corpo-tamanho: 32px;
+  --peca-corpo-altura: 45px;
+  --peca-corpo-peso: var(--fonte-peso-regular);
+  --peca-corpo-espacamento: 0em;
+  --peca-legenda-tamanho: 24px;
+  --peca-legenda-altura: 34px;
+  --peca-legenda-peso: var(--fonte-peso-medio);
+  --peca-legenda-espacamento: 0.01em;
+  --peca-selo-tamanho: 24px;
+  --peca-selo-altura: 29px;
+  --peca-selo-peso: var(--fonte-peso-bold);
+  --peca-selo-espacamento: 0.08em;
+}
+
+[data-formato="slide"] {
+  --peca-hero-tamanho: 152px;
+  --peca-hero-altura: 152px;
+  --peca-hero-peso: var(--fonte-peso-extrabold);
+  --peca-hero-espacamento: -0.03em;
+  --peca-titulo-tamanho: 114px;
+  --peca-titulo-altura: 120px;
+  --peca-titulo-peso: var(--fonte-peso-extrabold);
+  --peca-titulo-espacamento: -0.02em;
+  --peca-subtitulo-tamanho: 85px;
+  --peca-subtitulo-altura: 94px;
+  --peca-subtitulo-peso: var(--fonte-peso-bold);
+  --peca-subtitulo-espacamento: -0.01em;
+  --peca-destaque-tamanho: 64px;
+  --peca-destaque-altura: 77px;
+  --peca-destaque-peso: var(--fonte-peso-bold);
+  --peca-destaque-espacamento: 0em;
+  --peca-chamada-tamanho: 48px;
+  --peca-chamada-altura: 62px;
+  --peca-chamada-peso: var(--fonte-peso-semibold);
+  --peca-chamada-espacamento: 0em;
+  --peca-corpo-tamanho: 36px;
+  --peca-corpo-altura: 50px;
+  --peca-corpo-peso: var(--fonte-peso-regular);
+  --peca-corpo-espacamento: 0em;
+  --peca-legenda-tamanho: 27px;
+  --peca-legenda-altura: 38px;
+  --peca-legenda-peso: var(--fonte-peso-medio);
+  --peca-legenda-espacamento: 0.01em;
+  --peca-selo-tamanho: 27px;
+  --peca-selo-altura: 32px;
+  --peca-selo-peso: var(--fonte-peso-bold);
+  --peca-selo-espacamento: 0.08em;
+}
+
+[data-formato="impresso"] {
+  --peca-hero-tamanho: 46pt;
+  --peca-hero-altura: 46pt;
+  --peca-hero-peso: var(--fonte-peso-extrabold);
+  --peca-hero-espacamento: -0.03em;
+  --peca-titulo-tamanho: 35pt;
+  --peca-titulo-altura: 37pt;
+  --peca-titulo-peso: var(--fonte-peso-extrabold);
+  --peca-titulo-espacamento: -0.02em;
+  --peca-subtitulo-tamanho: 26pt;
+  --peca-subtitulo-altura: 29pt;
+  --peca-subtitulo-peso: var(--fonte-peso-bold);
+  --peca-subtitulo-espacamento: -0.01em;
+  --peca-destaque-tamanho: 20pt;
+  --peca-destaque-altura: 24pt;
+  --peca-destaque-peso: var(--fonte-peso-bold);
+  --peca-destaque-espacamento: 0em;
+  --peca-chamada-tamanho: 15pt;
+  --peca-chamada-altura: 20pt;
+  --peca-chamada-peso: var(--fonte-peso-semibold);
+  --peca-chamada-espacamento: 0em;
+  --peca-corpo-tamanho: 11pt;
+  --peca-corpo-altura: 15pt;
+  --peca-corpo-peso: var(--fonte-peso-regular);
+  --peca-corpo-espacamento: 0em;
+  --peca-legenda-tamanho: 8pt;
+  --peca-legenda-altura: 11pt;
+  --peca-legenda-peso: var(--fonte-peso-medio);
+  --peca-legenda-espacamento: 0.01em;
+  --peca-selo-tamanho: 8pt;
+  --peca-selo-altura: 10pt;
+  --peca-selo-peso: var(--fonte-peso-bold);
+  --peca-selo-espacamento: 0.08em;
+}
+
+/* Cores de ícones (biblioteca Figma "ASMUBE · Ícones", Streamline CC BY 4.0). Sobre o azul, use data-icones="sobre-azul". */
+
+:root,
+[data-icones="sobre-claro"] {
+  --icone-primario: var(--cor-azul-800);
+  --icone-secundario: var(--cor-verde-500);
+  --icone-profundo: var(--cor-azul-950);
+  --icone-suave: var(--cor-verde-200);
+  --icone-suave-azul: var(--cor-azul-300);
+  --icone-verde-medio: var(--cor-verde-400);
+  --icone-azul-medio: var(--cor-azul-500);
+  --icone-fundo: var(--cor-branco);
+}
+
+[data-icones="sobre-azul"],
+.secao--marca,
+.card--marca {
+  --icone-primario: var(--cor-branco);
+  --icone-secundario: var(--cor-verde-500);
+  --icone-profundo: var(--cor-branco);
+  --icone-suave: var(--cor-azul-700);
+  --icone-suave-azul: var(--cor-azul-600);
+  --icone-verde-medio: var(--cor-verde-400);
+  --icone-azul-medio: var(--cor-azul-400);
+  --icone-fundo: var(--cor-azul-800);
+}
+
+/* Estilos de texto — web */
+
+.texto-display {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-display-tamanho);
+  line-height: var(--texto-display-altura);
+  font-weight: var(--texto-display-peso);
+  letter-spacing: var(--texto-display-espacamento);
+}
+
+.texto-h1 {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-h1-tamanho);
+  line-height: var(--texto-h1-altura);
+  font-weight: var(--texto-h1-peso);
+  letter-spacing: var(--texto-h1-espacamento);
+}
+
+.texto-h2 {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-h2-tamanho);
+  line-height: var(--texto-h2-altura);
+  font-weight: var(--texto-h2-peso);
+  letter-spacing: var(--texto-h2-espacamento);
+}
+
+.texto-h3 {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-h3-tamanho);
+  line-height: var(--texto-h3-altura);
+  font-weight: var(--texto-h3-peso);
+  letter-spacing: var(--texto-h3-espacamento);
+}
+
+.texto-h4 {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-h4-tamanho);
+  line-height: var(--texto-h4-altura);
+  font-weight: var(--texto-h4-peso);
+  letter-spacing: var(--texto-h4-espacamento);
+}
+
+.texto-h5 {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-h5-tamanho);
+  line-height: var(--texto-h5-altura);
+  font-weight: var(--texto-h5-peso);
+  letter-spacing: var(--texto-h5-espacamento);
+}
+
+.texto-corpo-lg {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-corpo-lg-tamanho);
+  line-height: var(--texto-corpo-lg-altura);
+  font-weight: var(--texto-corpo-lg-peso);
+  letter-spacing: var(--texto-corpo-lg-espacamento);
+}
+
+.texto-corpo {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-corpo-tamanho);
+  line-height: var(--texto-corpo-altura);
+  font-weight: var(--texto-corpo-peso);
+  letter-spacing: var(--texto-corpo-espacamento);
+}
+
+.texto-legenda {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-legenda-tamanho);
+  line-height: var(--texto-legenda-altura);
+  font-weight: var(--texto-legenda-peso);
+  letter-spacing: var(--texto-legenda-espacamento);
+}
+
+.texto-sobretitulo {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-sobretitulo-tamanho);
+  line-height: var(--texto-sobretitulo-altura);
+  font-weight: var(--texto-sobretitulo-peso);
+  letter-spacing: var(--texto-sobretitulo-espacamento);
+  text-transform: uppercase;
+}
+
+.texto-botao {
+  font-family: var(--fonte-familia);
+  font-size: var(--texto-botao-tamanho);
+  line-height: var(--texto-botao-altura);
+  font-weight: var(--texto-botao-peso);
+  letter-spacing: var(--texto-botao-espacamento);
+}
+
+/* Estilos de texto — peças */
+
+.peca-hero {
+  font-family: var(--fonte-familia);
+  font-size: var(--peca-hero-tamanho);
+  line-height: var(--peca-hero-altura);
+  font-weight: var(--peca-hero-peso);
+  letter-spacing: var(--peca-hero-espacamento);
+}
+
+.peca-titulo {
+  font-family: var(--fonte-familia);
+  font-size: var(--peca-titulo-tamanho);
+  line-height: var(--peca-titulo-altura);
+  font-weight: var(--peca-titulo-peso);
+  letter-spacing: var(--peca-titulo-espacamento);
+}
+
+.peca-subtitulo {
+  font-family: var(--fonte-familia);
+  font-size: var(--peca-subtitulo-tamanho);
+  line-height: var(--peca-subtitulo-altura);
+  font-weight: var(--peca-subtitulo-peso);
+  letter-spacing: var(--peca-subtitulo-espacamento);
+}
+
+.peca-destaque {
+  font-family: var(--fonte-familia);
+  font-size: var(--peca-destaque-tamanho);
+  line-height: var(--peca-destaque-altura);
+  font-weight: var(--peca-destaque-peso);
+  letter-spacing: var(--peca-destaque-espacamento);
+}
+
+.peca-chamada {
+  font-family: var(--fonte-familia);
+  font-size: var(--peca-chamada-tamanho);
+  line-height: var(--peca-chamada-altura);
+  font-weight: var(--peca-chamada-peso);
+  letter-spacing: var(--peca-chamada-espacamento);
+}
+
+.peca-corpo {
+  font-family: var(--fonte-familia);
+  font-size: var(--peca-corpo-tamanho);
+  line-height: var(--peca-corpo-altura);
+  font-weight: var(--peca-corpo-peso);
+  letter-spacing: var(--peca-corpo-espacamento);
+}
+
+.peca-legenda {
+  font-family: var(--fonte-familia);
+  font-size: var(--peca-legenda-tamanho);
+  line-height: var(--peca-legenda-altura);
+  font-weight: var(--peca-legenda-peso);
+  letter-spacing: var(--peca-legenda-espacamento);
+}
+
+.peca-selo {
+  font-family: var(--fonte-familia);
+  font-size: var(--peca-selo-tamanho);
+  line-height: var(--peca-selo-altura);
+  font-weight: var(--peca-selo-peso);
+  letter-spacing: var(--peca-selo-espacamento);
+  text-transform: uppercase;
+}
+
